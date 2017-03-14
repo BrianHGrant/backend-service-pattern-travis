@@ -14,7 +14,7 @@ echo Running test_proj.sh...
 
 echo Create the Docker Container
 
-docker create brianhgrant/homeless-service --name homeless-service
+docker create brianhgrant/homeless-service --name=homeless-service
 
 echo Listing Docker Containers...
 
