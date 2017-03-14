@@ -13,16 +13,12 @@ echo Running test_proj.sh...
 # echo Service Built...
 
 echo Create the Docker Container
-
-docker-compose create --name=homeless-service brianhgrant/homeless-service
+docker network create homeless-service_default
+docker-compose create homeless-service
 
 echo Listing Docker Containers...
 
 docker ps -a
-
-echo Listing Docker Images...
-
-docker images -a
 
 echo Start the Docker Container...
 
