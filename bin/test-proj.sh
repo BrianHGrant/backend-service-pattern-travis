@@ -6,4 +6,4 @@
 
 echo Running test_proj.sh...
 
-docker-compose run homeless-service python manage.py test
+docker-compose --entrypoint="python manage.py test" run homeless-service
