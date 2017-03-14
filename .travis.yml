@@ -7,6 +7,6 @@ before_script:
   - ./bin/getconfig.sh
   - ./bin/build-proj.sh
 script:
-  - ./bin/test-proj.sh
 after_success:
+  - ./bin/test-proj.sh
   - ./bin/push.sh
