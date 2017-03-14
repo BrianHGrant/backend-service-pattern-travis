@@ -5,8 +5,8 @@ install:
   - pip install awscli
 before_script:
   - ./bin/getconfig.sh
-  - ./bin/build-proj.sh
 script:
 after_success:
+  - ./bin/build-proj.sh
   - ./bin/test-proj.sh
   - ./bin/push.sh

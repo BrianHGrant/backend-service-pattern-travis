@@ -26,7 +26,7 @@ docker images -a
 
 echo Start the Docker Container...
 
-docker-compose start 
+docker-compose start homeless-service
 
 echo Container started
 
