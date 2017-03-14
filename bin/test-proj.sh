@@ -12,6 +12,10 @@ echo Running test_proj.sh...
 # docker-compose build
 # echo Service Built...
 
+echo Create the Docker Container
+
+docker-compose create homeless-service
+
 echo Listing Docker Containers...
 
 docker ps -a
