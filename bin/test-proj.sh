@@ -6,4 +6,20 @@
 
 echo Running test_proj.sh...
 
-docker-compose run --entrypoint="python manage.py test"  homeless-service
+# docker-compose run --entrypoint="python manage.py test"  homeless-service
+
+echo Build the service...
+docker-compose homeless-service build .
+echo Service Built...
+
+echo Listing Docker Containers...
+
+docker ps -a
+
+echo Start the Docker Container...
+
+docker-compose start homeless-service
+
+echo Container started
+
+docker-compose exec homeless-service python manage.py test
