@@ -1,7 +1,7 @@
 ## Hack Oregon Exemplar Backend Service
 
 ## Purpose
-Simple static catalog of the the Hack Oregon service end points to test.
+Simple static catalog of the the Hack Oregon service end points to test. You hear that!
 
 ## Dependencies
 
