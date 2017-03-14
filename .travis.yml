@@ -6,7 +6,7 @@ install:
 before_script:
   - ./bin/getconfig.sh
 script:
-  - ./bin/build-proj.sh
+  # - ./bin/build-proj.sh
   - ./bin/test-proj.sh
 after_success:
   - ./bin/push.sh
