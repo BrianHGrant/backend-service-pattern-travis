@@ -14,7 +14,7 @@ echo Running test_proj.sh...
 
 echo Create the Docker Container
 
-docker-compose create homeless-service
+docker create homeless-service
 
 echo Listing Docker Containers...
 
