@@ -14,7 +14,7 @@ echo Running test_proj.sh...
 
 echo Create the Docker Container
 
-docker create --name=homeless-service brianhgrant/homeless-service 
+docker create --name=homeless-service brianhgrant/homeless-service
 
 echo Listing Docker Containers...
 
@@ -26,7 +26,7 @@ docker images -a
 
 echo Start the Docker Container...
 
-docker-compose start homeless-service
+docker-compose start 
 
 echo Container started
 
