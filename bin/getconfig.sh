@@ -24,5 +24,7 @@ fi
 echo sourcing the env
 
 ls -a $PROJ_SETTINGS_DIR
+chmod +x $PROJ_SETTINGS_DIR/env.sh
+source $PROJ_SETTINGS_DIR/env.sh
 
 echo DATABASE_NAME
