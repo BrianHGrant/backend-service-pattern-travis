@@ -17,14 +17,6 @@ else
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin
     aws s3 cp \
-          s3://$CONFIG_BUCKET/$DEPLOY_TARGET/env.sh \
-          $PROJ_SETTINGS_DIR/env.sh;
+          s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
+          $PROJ_SETTINGS_DIR/project_config.py;
 fi
-
-echo sourcing the env
-
-ls -a $PROJ_SETTINGS_DIR
-chmod +x $PROJ_SETTINGS_DIR/env.sh
-source $PROJ_SETTINGS_DIR/env.sh
-
-echo DATABASE_NAME
