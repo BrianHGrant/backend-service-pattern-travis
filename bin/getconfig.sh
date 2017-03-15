@@ -23,6 +23,6 @@ fi
 
 echo sourcing the env
 
-source **/env.sh;
+ls -a $PROJ_SETTINGS_DIR
 
 echo DATABASE_NAME
